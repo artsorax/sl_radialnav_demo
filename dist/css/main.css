@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: url(../back.jpg);
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+body.context {
+  cursor: crosshair;
+}
+
+.hide {
+  display: none;
+}
+
+.radialnav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.radialnav-sector {
+  fill: rgba(255,255,255,.3);
+  stroke: rgba(255,255,255,0.1);
+  stroke-width: 1;
+  transition: all .4s;
+}
+
+.radialnav-sector.active {
+  fill: rgba(255,255,255,.9);
+}
+
+.radialnav-icon {
+  pointer-events: none;
+  fill: #eee;
+  transition: all .4s;
+}
+
+.radialnav-icon.active {
+  fill: #333;
+}
+
+.radialnav-hint {
+  fill: #eee;
+  font: .95em 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-anchor: middle;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all .4s;
+}
+
+.radialnav-hint.active {
+  opacity: 1;
+}
